@@ -1,0 +1,187 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+body {
+    left: 0;
+    margin: 0;
+    position: relative;
+}
+
+.nav {
+    z-index: 10;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    height: 65.5px;
+    width: 100%;
+    border-bottom: 1px solid #636366;
+}
+
+.nav li {
+    position: relative;
+    font-size: 1.45em; /*20px*/
+    display: inline;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 18px;
+    padding-right: 20px;
+}
+
+.nav img {
+	height: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 15px;
+}
+
+.nav a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#sign-up {
+    color: #33ccff;
+}
+
+.glyphicon.glyphicon-list {
+    margin-left: -35px;
+}
+
+.menu {
+    background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+    left: -285px;
+    height: 100%;
+    position: fixed;
+    width: 285px;
+}
+
+.menu ul {
+    border-top: 1px solid #636366;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #636366;
+    line-height: 45px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 1.0875em; /* 15px */
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #33ccff;
+}
+
+.icon-close {
+    cursor: pointer;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.glyphicon.glyphicon-remove-circle {
+    font-size: 2.5em; /* 35px */
+}
+
+.page-header {
+    padding-top: 65px;
+    margin-top: 0px;
+}
+
+
+.jumbotron {
+    background-image: url('images/logo-600.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 90px;
+    height: 715px;
+
+}
+
+.jumbotron h1 {
+    color: black;
+    font-size: 48px;  
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.jumbotron .container {
+    position: relative;
+    top: 25px;
+}
+
+.news h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+}
+
+.news p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding-bottom: 13px;
+}
+
+.page-header {
+    font-family: 'Lato', sans-serif;
+}
+
+.caption {
+    font-family: 'Lato', sans-serif;
+}
+
+.footer {
+    margin-top: 100px;
+    border-top: 1px solid #eee;
+}
+
+.dropdown button {
+    margin-top: 5px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#ip {
+    font-weight: bold;
+    color: #49931b;
+}
+
+.sidebar {
+    float: left;
+    position: fixed;
+}

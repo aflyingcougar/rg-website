@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Home | Random Gamers</title>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="main.css" />
+        <link href="images/logo-600.png" rel='shortcut icon'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <!-- NavBar -->
+        <div class="nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4">
+							<ul>
+								<li class="icon-menu"><span class="glyphicon glyphicon-list"></span> Menu</li>
+							</ul>					
+					</div>
+					
+					<div class="col-xs-4">
+						<ul>
+							<li><a href="index.html">Random Gamers</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-xs-4">
+						<ul>
+							<li class="pull-right" id="sign-up"><a href="sign-up.html" id="sign-up">Sign Up</a></li>
+							<li class="pull-right">Login</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="menu">
+            <!-- Menu Icon -->
+            <div class="icon-close">
+                <span class="glyphicon glyphicon-remove-circle" style="color: white"></span>
+            </div>
+
+            <!-- Menu -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servers.html">Servers</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+
+        <!--Page Header-->
+        <div class="page-header">
+            <div class="container">
+                <h2>Register</h2>
+            </div>
+        </div>
+
+		<!--Register Forms-->
+		<div class="register">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-xs-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="email-address">Email address</label>
+                                <input type="email" class="form-control" id="email-address" placeholder="Email" />
+								<span id="helpBlock" class="help-block">We will never send you unsolicited junk email, or share your data with anyone else.</span>
+                            </div>
+
+                            <div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password" placeholder="Password" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm-password" placeholder="Re-Enter Password" />
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-default">Submit</button>
+								
+                            </div>
+                        </form>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <center>
+                    <p class="text-muted">
+                        <script type="text/javascript">                                                                                  (function () { var c = document.createElement('link'); c.type = 'text/css'; c.rel = 'stylesheet'; c.href = 'http://images.dmca.com/badges/dmca.css?ID=5975b81e-b7db-4d8c-bc3e-82377c4799a7'; var h = document.getElementsByTagName("head")[0]; h.appendChild(c); })();</script><div id="DMCA-badge"><div class="dm-1 dm-1-b" style="left: 0px; background-color: rgb(135, 135, 135);"><a href="http://www.dmca.com/" title="DMCA">DMCA</a></div><div class="dm-2 dm-2-b"><a href="http://www.dmca.com/Protection/Status.aspx?ID=5975b81e-b7db-4d8c-bc3e-82377c4799a7" title="DMCA">PROTECTED</a></div></div> © 2015 Random Gamers. All rights reserved.
+                    </p>
+                </center>
+            </div>
+        </footer>
+
+    </body>
+</html>

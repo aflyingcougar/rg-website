@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Teams | Random Gamers</title>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="main.css" />
+        <link href="images/logo-600.png" rel='shortcut icon'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <!-- NavBar -->
+        <div class="nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4">
+							<ul>
+								<li class="icon-menu"><span class="glyphicon glyphicon-list"></span> Menu</li>
+							</ul>					
+					</div>
+					
+					<div class="col-xs-4">
+						<ul>
+							<li><a href="index.html">Random Gamers</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-xs-4">
+						<ul>
+							<li class="pull-right" id="sign-up"><a href="sign-up.html" id="sign-up">Sign Up</a></li>
+							<li class="pull-right">Login</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="menu">
+            <!-- Menu Icon -->
+            <div class="icon-close">
+                <span class="glyphicon glyphicon-remove-circle" style="color: white"></span>
+            </div>
+
+            <!-- Menu -->
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="servers.html"><li>Servers</li></a>
+                <a href="teams.html"><li>Teams</li></a>
+                <a href="news.html"><li>News</li></a>
+                <a href="donate.html"><li>Donate</li></a>
+                <a href="about.html"><li>About</li></a>
+            </ul>
+        </div>
+
+        <!--Page Header-->
+        <div class="page-header">
+            <div class="container">
+                <h2>News</h2>
+                <p>See what's happening in the RG community!</p>
+            </div>
+        </div>
+
+        <!--<div class="sidebar">
+            <div class="list-group">
+                <a href="news.html" class="list-group-item">Top</a>
+                <a href="news.html#article1" class="list-group-item">PUG Mod</a>
+                <a href="news.html#article2" class="list-group-item">TS Server</a>
+                <a href="news.html#article3" class="list-group-item">Steam Group</a>
+            </div>
+        </div>-->
+    
+    
+
+        <!--Article 1-->
+        <div class="article1">
+            <div class="container">
+                <a name="article1"></a>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+
+                        <h3 class="panel-title">PUG Mod</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            One of the latest mods installed on the CS:GO server, Pug Setup v1.4.2, provides users with the ability to start pick-up games with just a few simple chat-commands. The plugin was written by AlliedModders user, <b>splewis.</b>
+                            By simply typing <code>.setup</code> into chat, anyone can access an on-screen menu allowing easy changing of match-variables such as team size, map choice, and many others.
+                            Author of the plugin, <b>splewis</b> says, <blockquote>
+                                The overall experience is similar to CEVO or ESEA scrim servers, and significant work was done to make it easy to install and use without needing much technical knowledge.
+                                <br /><small>splewis in <i><a href="https://forums.alliedmods.net/showthread.php?p=2167245">AlliedModders</a></i></small>
+                            </blockquote>
+                            <!--Article Thumbnail-->
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a class="thumbnail">
+                                        <img src="images/pug-menu.png" />
+                                    </a>
+                                </div>
+
+                                <div class="col-xs-8">
+                                    <b>How to Use the Mod: </b>Assuming nobody has already started a match, anyone in the server can type <code>.setup</code> to open the menu featured in the picture to the left.
+                                    From this menu, you can use the numbers on the keyboard to navigate the menus and change any desired matchmaking parameters (team size, map, etc.). When you have altered all the
+                                    parameters to how you would like, press <code>1</code> to finalize the match settings. The server will go into 'matchmaking mode,' awaiting for the required amount of players to type .ready in chat.
+                                    Once the required amount of players are "ready" the match will automatically (or not automatically) start the match, depending on whether you turned on "Auto-Live" or not.
+                                    <br />
+                                    <br />
+                                    Upon match end, the server will go back into "warmup" mode, awaiting another <code>.setup</code> command.
+                                </div>
+                            </div>
+
+                            <!--Useful Commands Table-->
+                            <br />
+                            <table class="table table-striped">
+                                <tr>
+                                    <th width="20%">Command</th>
+                                    <th>Description</th>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.setup</td>
+                                    <td>begins the setup phase and sets the pug leader</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.ready</td>
+                                    <td>marks you as ready</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.notready</td>
+                                    <td>marks you as unready</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.pause</td>
+                                    <td>requests a pause (which takes effect next freezetime)</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.unpause</td>
+                                    <td>request an unpause</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.start</td>
+                                    <td>starts the game if auto-live has been disabled</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.capt</td>
+                                    <td>
+                                        gives the pug leader a menu to select captains
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.rand</td>
+                                    <td>selects random captains</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.leader</td>
+                                    <td>gives a menu to change the game leader</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.endgame</td>
+                                    <td>force ends the game safely (only the leader can do this, note that this **resets the leader** to nobody)</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.stay</td>
+                                    <td>chooses to stay after winning a knife round</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="20%">.swap</td>
+                                    <td>chooses to swap after winning a knife round</td>
+                                </tr>
+
+                            </table>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Article 2-->
+        <div class="article2">
+            <div class="container">
+                <a name="article2"></a>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">TeamSpeak 3 Server</h3>
+                    </div>
+                    <div class="panel-body">
+                        <!--Article Thumbnail-->
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <a class="thumbnail">
+                                    <img src="images/teamspeak-ss.png" />
+                                </a>
+                            </div>
+
+                            <div class="col-xs-8">
+                                As of now, we currently locally host a 16-slot TeamSpeak 3 server. For those who don't know, TeamSpeak is a VOIP (Voice Over IP) program used to communicate with your friends <i>outside</i> of the games you
+                                normally play. The main advantage to using TeamSpeak (TS) over using in-game voice is the higher audio quality and you can communicate at all times (through loading screens). In other words, even if you haven't
+                                loaded up Counter-Strike yet, and you're staring at your desktop, you can still be talking to your friends in TS.
+                                <br />
+                                <br />
+                                Currently the 16-slot TS server is hosted on the owner's, bpEX, computer. As our community grows
+                                we plan to upgrade our TeamSpeak 3 server to more slots and to also pay to have it hosted on a more reliable setup. Below we have listed our connection info, and how to connect if it is your first time using TS.
+                                <br />
+                                <br />
+                                <b id="ip">IP: 24.242.40.204<br />Port: 9987<br /></b>
+                            </div>
+                        </div>
+
+                        <p>
+                            <b>How to connect: </b>
+                            <br />
+                            If you havent downloaded the TeamSpeak 3 client, you can do so in the <b>Links</b> section below. Afer downloading and installing TeamSpeak 3, it will prompt you to go through a "Setup Wizard."
+                            This will get you set up with your recording and playback devices, as well as the buttons (or voice-activation) that you will use to talk in TS. Now you can follow the steps below to Bookmark our server and connect:
+
+                        </p>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <!--Steps to Connect-->
+                                <br />
+                                <ul class="list-group">
+                                    <li class="list-group-item">1. Go to the <a href="servers.html" target="_blank">Servers</a> page on our website</li>
+                                    <li class="list-group-item">2. Press the 'Join Server' button to the right.</li>
+                                    <li class="list-group-item">3. In the window that pops up, press 'Bookmark and Connect'</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-xs-6">
+                                <!--Links-->
+                                <b>Links</b>
+                                <br />
+                                <br />
+                                <a class="btn btn-success" href="http://www.teamspeak.com/?page=downloads" target="_blank" role="button">TeamSpeak Downloads</a>
+                                <br />
+                                <br />
+                                <a href="ts3server://24.242.40.204?port=9987&addbookmark=MyBookMarkLabel" class="btn btn-primary" role="button">Join Server</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Article 3-->
+        <div class="article3">
+            <div class="container">
+                <a name="article3"></a>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Steam Group</h3>
+                    </div>
+                    <div class="panel-body">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <center>
+                    <p class="text-muted">
+                        <script type="text/javascript">                                                                                  (function () { var c = document.createElement('link'); c.type = 'text/css'; c.rel = 'stylesheet'; c.href = 'http://images.dmca.com/badges/dmca.css?ID=5975b81e-b7db-4d8c-bc3e-82377c4799a7'; var h = document.getElementsByTagName("head")[0]; h.appendChild(c); })();</script><div id="DMCA-badge"><div class="dm-1 dm-1-b" style="left: 0px; background-color: rgb(135, 135, 135);"><a href="http://www.dmca.com/" title="DMCA">DMCA</a></div><div class="dm-2 dm-2-b"><a href="http://www.dmca.com/Protection/Status.aspx?ID=5975b81e-b7db-4d8c-bc3e-82377c4799a7" title="DMCA">PROTECTED</a></div></div> © 2015 Random Gamers. All rights reserved.
+                    </p>
+                </center>
+            </div>
+        </footer>
+
+    </body>
+</html>
